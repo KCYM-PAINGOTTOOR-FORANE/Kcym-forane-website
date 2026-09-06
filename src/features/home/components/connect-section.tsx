@@ -50,12 +50,17 @@ export function ConnectSection() {
       </div>
 
       <div
-        className="min-h-[400px] w-full bg-cover bg-center md:min-h-full md:w-1/2 lg:w-2/5"
+        className="relative min-h-[400px] w-full bg-cover bg-center md:min-h-full md:w-1/2 lg:w-2/5"
         style={{
-          backgroundImage:
-            "url('https://images.unsplash.com/photo-1438032005730-c779502df39b?w=1200&auto=format&fit=crop&q=80')",
+          backgroundImage: "url('/connect_kcym.jpg')",
         }}
-      />
+      >
+        {/* Subtle gradients to blend only the edges of the image into the background */}
+        <div className="absolute inset-y-0 left-0 w-16 bg-gradient-to-r from-paper to-transparent opacity-60" />
+        <div className="absolute inset-y-0 right-0 w-16 bg-gradient-to-l from-paper to-transparent opacity-60" />
+        <div className="absolute inset-x-0 top-0 h-16 bg-gradient-to-b from-paper to-transparent opacity-60" />
+        <div className="absolute inset-x-0 bottom-0 h-16 bg-gradient-to-t from-paper to-transparent opacity-60" />
+      </div>
     </section>
   );
 }

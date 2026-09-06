@@ -61,6 +61,7 @@
   --font-headline: var(--font-playfair-display), ui-serif, Georgia, serif;
   --font-heading-alt: var(--font-oswald), ui-sans-serif, system-ui, sans-serif;
   --font-body: var(--font-roboto-slab), ui-serif, Georgia, serif;
+  --font-saira: var(--font-saira-condensed), ui-sans-serif, system-ui, sans-serif;
 
   --text-headline-xl: 46px;
   --text-headline-xl--line-height: 52px;

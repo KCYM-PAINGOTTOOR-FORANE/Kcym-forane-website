@@ -1,3 +1,4 @@
+import { ScrollReveal } from '@/components/ui/scroll-reveal';
 import {
   AboutSection,
   ActivitiesSection,
@@ -11,13 +12,27 @@ import {
 export default function Home() {
   return (
     <>
-      <HeroSection />
-      <AboutSection />
-      <ForaneIntroSection />
-      <ForaneLeadershipSection />
-      <ParishesSection />
-      <ActivitiesSection />
-      <ConnectSection />
+      <ScrollReveal amount={0}>
+        <HeroSection />
+      </ScrollReveal>
+      <ScrollReveal>
+        <AboutSection />
+      </ScrollReveal>
+      <ScrollReveal>
+        <ForaneIntroSection />
+      </ScrollReveal>
+      <ScrollReveal>
+        <ForaneLeadershipSection />
+      </ScrollReveal>
+      <ScrollReveal>
+        <ParishesSection />
+      </ScrollReveal>
+      <ScrollReveal>
+        <ActivitiesSection />
+      </ScrollReveal>
+      <ScrollReveal>
+        <ConnectSection />
+      </ScrollReveal>
     </>
   );
 }

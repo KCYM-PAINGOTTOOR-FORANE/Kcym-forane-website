@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from 'next';
-import { Oswald, Playfair_Display, Roboto_Slab } from 'next/font/google';
+import { Oswald, Playfair_Display, Roboto_Slab, Saira_Condensed } from 'next/font/google';
 import { Footer, Header } from '@/components/layouts';
 import { constructMetadata } from '@/lib/metadata';
 import '@/app/globals.css';
@@ -9,6 +9,13 @@ const playfairDisplay = Playfair_Display({
   weight: ['600', '700', '800', '900'],
   display: 'swap',
   variable: '--font-playfair-display',
+});
+
+const sairaCondensed = Saira_Condensed({
+  subsets: ['latin'],
+  weight: ['400', '500', '600', '700', '800', '900'],
+  display: 'swap',
+  variable: '--font-saira-condensed',
 });
 
 const oswald = Oswald({
@@ -43,7 +50,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html
       lang="en"
-      className={`${playfairDisplay.variable} ${oswald.variable} ${robotoSlab.variable}`}
+      className={`${playfairDisplay.variable} ${oswald.variable} ${robotoSlab.variable} ${sairaCondensed.variable}`}
     >
       <body className="flex min-h-screen flex-col bg-paper font-body text-ink antialiased">
         <Header />

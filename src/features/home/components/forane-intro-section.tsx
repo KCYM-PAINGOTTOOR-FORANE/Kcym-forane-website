@@ -51,16 +51,20 @@ export function ForaneIntroSection() {
         </div>
 
         {/* Brief write up below */}
-        <div className="max-w-3xl text-center flex flex-col items-center mt-12 bg-white/50 backdrop-blur-sm p-8 rounded-3xl shadow-sm border border-white/40">
+        <div className="max-w-5xl text-center flex flex-col items-center mt-12 bg-white/50 backdrop-blur-sm p-8 rounded-3xl shadow-sm border border-white/40">
           <h2 className="font-headline text-5xl text-ink font-bold mb-6 italic drop-shadow-sm transform -rotate-1">
             Our Forane
           </h2>
           <div className="h-1 w-24 bg-accent mb-8 rounded-full" />
-          <p className="text-xl md:text-2xl text-ink-muted leading-relaxed font-body font-medium">
-            Paingottoor Forane is a vibrant community of young people united in faith, fellowship,
-            and purpose. Growing spiritually, leading with conviction, and serving our community
-            across seven parishes. Carrying forward the spirit and vision of KCYM, we strive to be a
-            generation rooted in faith and rising for change.
+          <p className="text-lg md:text-xl text-ink-muted leading-relaxed font-body font-medium">
+            KCYM Paingottur Forane is a vibrant expression of our regional heritage, where seven
+            parishes come together as one family, united by faith, friendship, and a shared purpose.
+            Like seven different engines powering the same journey, each parish brings its own
+            identity, strength, traditions, and youthful spirit, yet all move together toward one
+            goal — to celebrate and empower youth in the path of Christ. Rooted in our heritage and
+            strengthened by our comraderie in Christ, we journey together as one community, carrying
+            forward a faith that inspires, a fellowship that unites, and a youth that is ready to
+            lead, serve, and make a difference.
           </p>
         </div>
       </div>
